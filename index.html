@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>🚀 CryptoPulse: Live Cryptocurrency Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="light-mode">
+  <div class="container">
+    <header>
+      <h1>🚀 CryptoPulse</h1>
+      <div class="controls">
+        <button id="themeToggle" title="Toggle Dark Mode">🌓</button>
+        <button id="downloadReport" title="Export Data to CSV">📊 Export Data</button>
+      </div>
+    </header>
+
+    <div class="dashboard">
+      <div class="crypto-grid" id="cryptoGrid">
+        <!-- Crypto cards will be inserted here -->
+      </div>
+
+      <div class="chart-container">
+        <h2 class="chart-title">
+          <span id="selectedCryptoName">Bitcoin</span> - Real-time Price Chart
+          <span class="view-mode" id="toggleView" title="Toggle Timeframe">Switch to 1H View</span>
+        </h2>
+        <canvas id="priceChart"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
